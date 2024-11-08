@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "a node practice project.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r dotenv/config src/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/veshall/node-practice-project/issues"
   },
-  "homepage": "https://github.com/veshall/node-practice-project#readme"
+  "homepage": "https://github.com/veshall/node-practice-project#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0"
+  }
 }
